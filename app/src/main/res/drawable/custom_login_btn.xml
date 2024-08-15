@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <!-- Status ketika tombol ditekan -->
+        <shape android:shape="rectangle">
+            <solid android:color="#E02582"/> <!-- Warna latar belakang saat ditekan -->
+            <stroke android:width="1dp" android:color="#090038"/> <!-- Border saat ditekan -->
+            <corners android:radius="10dp"/> <!-- Sudut melengkung -->
+        </shape>
+    </item>
+    <item>
+        <!-- Status default -->
+        <shape android:shape="rectangle">
+            <solid android:color="#CCE02582"/> <!-- Warna latar belakang default -->
+            <stroke android:width="1dp" android:color="#090038"/> <!-- Border default -->
+            <corners android:radius="10dp"/> <!-- Sudut melengkung -->
+        </shape>
+    </item>
+</selector>

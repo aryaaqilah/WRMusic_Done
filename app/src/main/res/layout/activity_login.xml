@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background_gradient"
+    android:padding="50dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+    
+    <TextView
+        android:id="@+id/usernameLabel"
+        android:layout_below="@id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="18dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/usernameField"
+        android:layout_below="@id/usernameLabel"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border_radius"
+        android:hint="Enter your username"
+        android:padding="10dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_below="@id/usernameField"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="18dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_below="@id/passwordLabel"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border_radius"
+        android:hint="Enter your password"
+        android:padding="10dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/errorLabel"
+        android:layout_below="@id/passwordField"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username cannot be empty!"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
